@@ -1,0 +1,151 @@
+  body {
+    margin: 0;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: black;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px 20px;
+    margin: 10px;
+    text-shadow: 0 0 5px red, 0 0 10px red, 0 0 15px red;
+    -webkit-text-stroke: 1px white;
+  }
+
+  .logo {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+  }
+  .logo img {
+    width: 500px; 
+    max-width: 100%;
+    height: auto;
+  }
+  .logo h1 {
+    font-size: 40px;
+    margin-top: 10px;
+    text-align: center;
+  }
+  .introducao {
+    color: black;
+    text-shadow:0 0 5px red, 0 0 10px red, 0 0 15px red;
+    -webkit-text-stroke: 1px white;
+  }
+
+  h3 {
+    font-size: 30px;
+    color: black;
+    text-shadow: 0 0 5px red, 0 0 10px red, 0 0 15px red;
+    -webkit-text-stroke: 1px white;
+    margin-bottom: 20px;
+  }
+
+  nav {
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-end; 
+  }
+  nav button {
+    border: 2px solid white; 
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 5px 0; 
+    background-color: transparent;
+    -webkit-text-stroke: 1px white;
+    text-shadow: 0 0 5px red, 0 0 10px red, 0 0 15px red;
+    color: black;
+    box-shadow: 0 0 5px red, 0 0 10px red, 0 0 15px red;
+    transition: transform 0.3s ease;
+  }
+  nav button:hover {
+    transform: scale(1.05);
+  }
+
+  .barra-vermelha {
+    width: 100%;
+    height: 4px;
+    background-color: white;
+    box-shadow: 0 0 15px red;
+    padding: 0; 
+  }
+
+  section {
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+  }
+
+  .cartao-personagem {
+    color: white; 
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 40px 20px;
+    gap: 24px;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+
+  .cartao {
+    width: 300px;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    background: rgb(44, 44, 44);
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+    transition: box-shadow 0.3s ease;
+    display: flex; 
+    flex-direction: column;
+    gap: 8px; 
+  }
+  .cartao:hover {
+    box-shadow: 0 0 20px rgba(255, 0, 0, 1);
+  }
+
+  .cartao img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    border: 6px solid rgb(44, 44, 44);
+    border-radius: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+  }
+
+  .descricao {
+    max-height: 0;
+    opacity: 0;
+    padding: 0 16px;
+    font-size: 16px;
+    line-height: 1.4;
+    color: white; 
+    overflow: hidden;
+    transition: max-height 0.4s ease, opacity 0.4s ease, padding 0.4s ease;
+  }
+  .cartao:hover .descricao {
+    max-height: 200px;
+    opacity: 1;
+    padding: 8px 16px;
+  }
+
+  @media (max-width: 960px) {
+    .cartao-personagem {
+      justify-content: center;
+    }
+    .cartao {
+      width: 90%; 
+      max-width: 400px;
+    }
+  }
